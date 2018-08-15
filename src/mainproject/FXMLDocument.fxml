@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.FXMLDocumentController">
+   <children>
+      <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="432.0" prefWidth="130.0" style="-fx-background-color: #E1BEE7;">
+               <children>
+                  <Label text="Department" />
+                  <JFXButton fx:id="departmentallogin" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" maxWidth="122.0" onAction="#departmentallogin" prefHeight="120.0" prefWidth="121.0" style="-fx-background-color: #9C27B0;" text="Department" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="61.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8_Org_Unit_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="432.0" prefWidth="360.0" style="-fx-background-color: #E1BEE7;">
+               <children>
+                  <JFXButton fx:id="aboutUS" buttonType="RAISED" onAction="#aboutUs" prefHeight="38.0" prefWidth="85.0" ripplerFill="#da44ce" style="-fx-background-color: #9C27B0;" text="About Us" textFill="WHITE" />
+                  <Label fx:id="mssgLbl" prefHeight="48.0" prefWidth="346.0" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons8_User_96px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="usernametext" labelFloat="true" maxWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Username">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="pword" labelFloat="true" maxWidth="200.0" prefWidth="200.0" promptText="password">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="loginbtn" buttonType="RAISED" onAction="#loginbutton" prefHeight="38.0" prefWidth="85.0" ripplerFill="#da44ce" style="-fx-background-color: #9C27B0;" text="Login" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="432.0" prefWidth="123.0" style="-fx-background-color: #E1BEE7;">
+               <children>
+                  <Label text="School" />
+                  <JFXButton fx:id="schoollogin" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" maxWidth="122.0" onAction="#schoollogin" prefHeight="115.0" prefWidth="115.0" style="-fx-background-color: #9C27B0;" text="School" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="72.0" fitWidth="122.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8_Department_104px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="updateprofile.UpdateprofilleController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="600.0" style="-fx-background-color: #E1BEE7;" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@../registerstudent/registerstudent.css" />
+         </stylesheets>
+         <children>
+            <Label alignment="CENTER" prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: #9C27B0;" text="Update profile" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Math" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="93.0" text="Sur name:" />
+            <Label layoutX="14.0" layoutY="157.0" text="First name:" />
+            <Label layoutX="14.0" layoutY="216.0" text="Middle name" />
+            <Label layoutX="10.0" layoutY="294.0" text="Gender" />
+            <JFXTextField fx:id="surname" layoutX="85.0" layoutY="89.0" />
+            <JFXTextField fx:id="firstname" layoutX="85.0" layoutY="153.0" />
+            <JFXTextField fx:id="middlename" layoutX="85.0" layoutY="212.0" />
+            <JFXComboBox fx:id="gender" layoutX="112.0" layoutY="290.0" prefHeight="25.0" prefWidth="96.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="373.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8_Profile_96px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="registerbtn" buttonType="RAISED" layoutX="355.0" layoutY="486.0" onAction="#registerButton" prefHeight="41.0" prefWidth="84.0" style="-fx-background-color: #9C27B0;" text="update" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Math" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cancelbtn" buttonType="RAISED" layoutX="473.0" layoutY="486.0" onAction="#cancelButton" prefHeight="41.0" prefWidth="84.0" style="-fx-background-color: #9C27B0;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Math" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="14.0" layoutY="384.0" text="D.O.B" />
+            <JFXDatePicker fx:id="dateofbirth" layoutX="84.0" layoutY="367.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

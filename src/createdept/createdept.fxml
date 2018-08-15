@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="600.0" style="-fx-background-color: #E1BEE7;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="createdept.CreatedeptController">
+    <stylesheets>
+        <URL value="@createdept.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="600.0" style="-fx-background-color: #9C27B0;" text="Create Department" textFill="#f8f8f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <VBox fx:id="departmentinfo" layoutX="23.0" layoutY="51.0" prefHeight="482.0" prefWidth="277.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="277.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="77.0" text="Select Faculty:" />
+                  <JFXComboBox fx:id="selectfaculty" prefHeight="25.0" prefWidth="198.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="277.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="136.0" text="Input Department Name:" />
+                  <JFXTextField fx:id="inputdeptname" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="67.0" prefHeight="57.0" prefWidth="277.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="118.0" text="Create Abbreviation:" />
+                  <JFXTextField fx:id="createabbrv" prefHeight="25.0" prefWidth="160.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="124.0" prefHeight="57.0" prefWidth="277.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="106.0" text="Input H.O.D Name:" />
+                  <JFXTextField fx:id="HODname" prefHeight="25.0" prefWidth="171.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="181.0" prefHeight="57.0" prefWidth="277.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="117.0" text="Select Year Of Study:" />
+                  <JFXComboBox fx:id="yearofstudy" prefHeight="25.0" prefWidth="157.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="277.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="111.0" text="Input Programme" />
+                  <JFXTextField fx:id="pogram" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@icons8_Org_Unit_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox fx:id="departmentphil" alignment="BOTTOM_CENTER" layoutX="300.0" layoutY="51.0" prefHeight="445.0" prefWidth="277.0" AnchorPane.leftAnchor="300.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="createdept" buttonType="RAISED" onAction="#createDept" prefHeight="47.0" prefWidth="78.0" style="-fx-background-color: #9C27B0;" text="Create" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="back" buttonType="RAISED" layoutX="110.0" layoutY="37.0" onAction="#backbtn" prefHeight="47.0" prefWidth="78.0" style="-fx-background-color: #9C27B0;" text="Back" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

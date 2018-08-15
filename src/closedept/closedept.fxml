@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="closeDept" prefHeight="488.0" prefWidth="560.0" style="-fx-background-color: #E1BEE7;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="closedept.ClosedeptController">
+    <stylesheets>
+        <URL value="@closedept.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="14.0" layoutY="74.0" text="Select Department:" />
+      <JFXTextField fx:id="deptName" labelFloat="true" layoutX="37.0" layoutY="103.0" promptText="Input department name" />
+      <Label layoutX="14.0" layoutY="243.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="672.0" style="-fx-background-color: #9C27B0;" text="CLOSE DEPARTMENT" textFill="WHITE" />
+      <ImageView fitHeight="240.0" fitWidth="295.0" layoutX="383.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8_Unavailable_96px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="close" buttonType="RAISED" layoutX="320.0" layoutY="394.0" onAction="#closebtn" prefHeight="49.0" prefWidth="75.0" ripplerFill="#96098b" style="-fx-background-color: #9C27B0;" text="Close" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="466.0" layoutY="394.0" onAction="#cancelbtn" prefHeight="49.0" prefWidth="75.0" ripplerFill="#96098b" style="-fx-background-color: #9C27B0;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <Label fx:id="mssgLbl" layoutX="14.0" layoutY="365.0" prefHeight="38.0" prefWidth="228.0" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="566.0" prefWidth="600.0" style="-fx-background-color: #E1BEE7;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="updatestudentrecord.UpdatestudentrecordController">
+    <stylesheets>
+        <URL value="@updatestudentrecord.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #9C27B0;" text="Update Records" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="496.0" layoutY="495.0" onAction="#backbtn" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #9C27B0;" text="Back" textFill="WHITE" />
+      <JFXButton fx:id="update" buttonType="RAISED" layoutX="396.0" layoutY="495.0" onAction="#updateprofile" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #9C27B0;" text="Update" textFill="WHITE" />
+   </children>
+</AnchorPane>

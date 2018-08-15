@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="444.0" prefWidth="639.0" style="-fx-background-color: #E1BEE7;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="mainproject.StudentmenuController">
+   <children>
+      <MenuBar prefHeight="30.0" prefWidth="639.0" style="-fx-background-color: #9C27B0;" AnchorPane.bottomAnchor="414.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu fx:id="viewprofile" mnemonicParsing="false" onAction="#viewProfileAction" text="View Profile" />
+          <Menu fx:id="updateprofile" mnemonicParsing="false" onAction="#updateProfileAction" text="Update Profile" />
+          <Menu fx:id="requesttransfer" mnemonicParsing="false" onAction="#requestTransferAction" text="Request Transfer" />
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

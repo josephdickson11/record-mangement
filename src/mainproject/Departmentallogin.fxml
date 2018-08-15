@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="548.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="mainproject.DepartmentalloginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="34.0" prefHeight="426.0" prefWidth="548.0" style="-fx-background-color: #E1BEE7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8_Org_Unit_100px.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="admin1user" labelFloat="true" maxHeight="25.0" maxWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Username">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="admin1pword" labelFloat="true" maxHeight="25.0" maxWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="password" />
+            <HBox alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="admin1login" buttonType="RAISED" onAction="#adminlogin" prefHeight="49.0" prefWidth="74.0" style="-fx-background-color: #9C27B0;" text="Login" textFill="WHITE" />
+                  <JFXButton fx:id="admin1back" buttonType="RAISED" onAction="#admin1back" prefHeight="49.0" prefWidth="74.0" style="-fx-background-color: #9C27B0;" text="Back" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

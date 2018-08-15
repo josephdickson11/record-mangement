@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="750.0" style="-fx-background-color: #E1BEE7;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.SchoolhamburgerController">
+   <children>
+      <JFXHamburger fx:id="hamburger" layoutX="677.0" layoutY="14.0" prefHeight="39.0" prefWidth="50.0" stylesheets="@hamburgerstyler.css" />
+      <JFXDrawer fx:id="schooldrawer" defaultDrawerSize="170.0" prefHeight="708.0" prefWidth="170.0" />
+      <JFXButton fx:id="home" buttonType="RAISED" contentDisplay="TOP" layoutX="629.0" layoutY="608.0" onAction="#homeBtn" prefHeight="73.0" prefWidth="97.0" style="-fx-background-color: #9C27B0;" text="Home" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8_Department_104px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

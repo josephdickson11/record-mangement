@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="506.0" style="-fx-background-color: #E1BEE7;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="createprogramme.CreateprogrammeController">
+    <stylesheets>
+        <URL value="@createprogramme.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" prefHeight="41.0" prefWidth="700.0" style="-fx-background-color: #9C27B0;" text="Create Programme" textFill="WHITE" AnchorPane.bottomAnchor="659.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Californian FB" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="204.0" fitWidth="250.0" layoutX="167.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8_Create_100px.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="136.0" layoutY="348.0" prefHeight="0.0" prefWidth="266.0">
+         <children>
+            <HBox>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Programme" />
+                  <JFXTextField fx:id="progName" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="150.0" layoutY="550.0" onAction="#backbtn" prefHeight="37.0" prefWidth="85.0" style="-fx-background-color: #9C27B0;" text="cancel" textFill="WHITE" />
+      <JFXButton fx:id="createProg" buttonType="RAISED" layoutX="277.0" layoutY="550.0" onAction="#createProg" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #9C27B0;" text="Create" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="497.0" style="-fx-background-color: #E1BEE7;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="requesttransfer.RequesttransferController">
+    <stylesheets>
+        <URL value="@requesttransfer.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="497.0" style="-fx-background-color: #9C27B0;" text="Make Transfer Request" textFill="#fcfcfc">
+         <font>
+            <Font name="Bookman Old Style" size="17.0" />
+         </font>
+      </Label>
+      <VBox layoutX="26.0" layoutY="59.0" prefHeight="396.0" prefWidth="440.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="440.0">
+               <children>
+                  <JFXTextField fx:id="matricnumber" focusColor="#9c27b0" labelFloat="true" prefHeight="25.0" prefWidth="311.0" promptText="Input matric number" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="440.0">
+               <children>
+                  <JFXTextField fx:id="choicedestination" focusColor="#9c27b0" labelFloat="true" prefHeight="25.0" prefWidth="311.0" promptText="Choice Destination Instituition" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="70.0" prefHeight="60.0" prefWidth="440.0">
+               <children>
+                  <JFXTextField fx:id="reasonFortransfer" focusColor="#9c27b0" labelFloat="true" prefHeight="25.0" prefWidth="311.0" promptText="Reason for Transfer" />
+               </children>
+            </HBox>
+            <ButtonBar prefHeight="58.0" prefWidth="440.0">
+               <buttons>
+                  <JFXButton buttonType="RAISED" layoutX="352.0" layoutY="13.0" onAction="#processTransferRequest" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #9C27B0;" text="Process" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="cancelrequest1" buttonType="RAISED" layoutX="244.0" layoutY="13.0" onAction="#cancelTransferRequest" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #9C27B0;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#viewRequestStatus" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: #9C27B0;" text="Request Status" textFill="WHITE" />
+               </buttons>
+            </ButtonBar>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@icons8_Transfer_Between_Users_96px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="messgLbl" prefHeight="27.0" prefWidth="429.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="170.0" style="-fx-background-color: #E1BEE7;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.SchooldrawerboxController">
+   <children>
+      <ImageView fitHeight="115.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="createdept" accessibleText="button1" buttonType="RAISED" onAction="#createdeptmet" prefHeight="49.0" prefWidth="184.0" style="-fx-background-color: #9C27B0;" stylesheets="@hamburgerstyler.css" text="create department" textFill="#fcfcfc" />
+      <JFXButton fx:id="closedept" accessibleText="button2" buttonType="RAISED" layoutX="10.0" layoutY="125.0" onAction="#closeDept" prefHeight="49.0" prefWidth="223.0" style="-fx-background-color: #9C27B0;" stylesheets="@hamburgerstyler.css" text="close department" textFill="#fcfcfc" />
+      <JFXButton fx:id="searchdept" accessibleText="button5" buttonType="RAISED" layoutX="10.0" layoutY="251.0" onAction="#searchDepartment" prefHeight="50.0" prefWidth="294.0" style="-fx-background-color: #9C27B0;" stylesheets="@hamburgerstyler.css" text="search department" textFill="#fcfcfc" />
+      <JFXButton fx:id="suspendstu" accessibleText="button6" buttonType="RAISED" layoutX="10.0" layoutY="293.0" onAction="#suspendstu" prefHeight="50.0" prefWidth="291.0" style="-fx-background-color: #9C27B0;" stylesheets="@hamburgerstyler.css" text="suspend student" textFill="#fcfcfc" />
+      <JFXButton fx:id="expelstu" accessibleText="button7" buttonType="RAISED" layoutX="10.0" layoutY="335.0" onAction="#expelStu" prefHeight="50.0" prefWidth="353.0" style="-fx-background-color: #9C27B0;" stylesheets="@hamburgerstyler.css" text="expel student" textFill="#fcfcfc" />
+      <JFXButton fx:id="viewjournal" accessibleText="button8" buttonType="RAISED" layoutX="10.0" layoutY="377.0" onAction="#viewJournal" prefHeight="50.0" prefWidth="313.0" style="-fx-background-color: #9C27B0;" stylesheets="@hamburgerstyler.css" text="view journal" textFill="#fcfcfc" />
+      <JFXButton fx:id="searchstu" accessibleText="button10" buttonType="RAISED" layoutX="10.0" layoutY="461.0" onAction="#searchSTu" prefHeight="50.0" prefWidth="333.0" style="-fx-background-color: #9C27B0;" stylesheets="@hamburgerstyler.css" text="search student" textFill="#fcfcfc" />
+      <JFXButton fx:id="treattransfer" accessibleText="button11" buttonType="RAISED" layoutX="10.0" layoutY="503.0" onAction="#treatTRansf" prefHeight="50.0" prefWidth="382.0" style="-fx-background-color: #9C27B0;" stylesheets="@hamburgerstyler.css" text="treat transfer request" textFill="#fcfcfc" />
+      <JFXButton fx:id="exitapp" accessibleText="button12" buttonType="RAISED" layoutX="10.0" layoutY="545.0" onAction="#ExitApp" prefHeight="79.0" prefWidth="595.0" style="-fx-background-color: #9C27B0;" stylesheets="@hamburgerstyler.css" text="exit application" textFill="#fcfcfc" />
+   </children>
+</VBox>

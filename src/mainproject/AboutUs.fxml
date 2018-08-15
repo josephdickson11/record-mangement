@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="575.0" style="-fx-background-color: #96259C;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.AboutusController">
+   <children>
+      <HBox layoutX="14.0" layoutY="72.0" prefHeight="45.0" prefWidth="580.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="336.0" style="-fx-background-color: #9627BC;" text="Names:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="300.0" style="-fx-background-color: #9627BC;" text="Matriculation Numbers:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="14.0" layoutY="110.0" prefHeight="279.0" prefWidth="292.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="AYALOWO KABIRU TOBA">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="JIBRIL FATIMA BINTA">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="41.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="USMAN TEMITAYO MARIANN">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="72.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="EZEKIEL OLUWATOBI EMMANUEL">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="103.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="ABDULRAHMAN FADILAT OYIZA">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="134.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="SUNDAY EZEKIEL AMOTO">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="165.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="`EMMANUEL OCHEJE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="196.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="IBEUN OLADIPUPO JOSEPH">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="227.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="EMMANUEL ED DANIEL">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="258.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="JATAU KEVIN EMMANUEL">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="262.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="BAMIDELE DANIEL">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="300.0" layoutY="110.0" prefHeight="279.0" prefWidth="292.0">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="72.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="2014/1/50832CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="2014/1/50860CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="41.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="2014/1/52519CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="72.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="2015/2/57729CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="103.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="2014/1/50846CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="134.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="2014/1/50826CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="165.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="2014/1/50823CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="196.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="2014/1/50872CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="227.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="2014/1/50842CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="258.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #C2BEDD;" text="2014/1/50828CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="262.0" prefHeight="31.0" prefWidth="336.0" style="-fx-background-color: #E1BEE7;" text="2011/1/38161CI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="146.0" layoutY="41.0" prefHeight="31.0" prefWidth="292.0" style="-fx-background-color: #KJHGD7;" text="DEVELOPMENT TEAM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="backbtn" buttonType="RAISED" layoutX="53.0" layoutY="14.0" onAction="#backbtn" prefHeight="40.0" prefWidth="93.0" style="-fx-background-color: #E1BEE7;" text="back">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

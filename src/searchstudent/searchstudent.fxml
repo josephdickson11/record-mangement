@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="600.0" style="-fx-background-color: #E1BEE7;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="searchstudent.SearchstudentController">
+    <stylesheets>
+        <URL value="@searchstudent.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" prefHeight="41.0" prefWidth="600.0" style="-fx-background-color: #9C27B0;" text="Search Student" textFill="#f5f5f5">
+         <font>
+            <Font name="Cambria Math" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="267.0" prefHeight="34.0" prefWidth="135.0" text="Matric Number">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <JFXTextField fx:id="inputMatno" labelFloat="true" layoutX="211.0" layoutY="301.0" prefHeight="25.0" prefWidth="200.0" promptText="Input Matric Here" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="33.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="search" buttonType="RAISED" layoutX="137.0" layoutY="434.0" onAction="#searchBtn" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #9C27B0;" text="Search" textFill="WHITE" />
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="411.0" layoutY="427.0" onAction="#backbtn" prefHeight="41.0" prefWidth="74.0" style="-fx-background-color: #9C27B0;" text="Back" textFill="WHITE" />
+      <ImageView fitHeight="167.0" fitWidth="243.0" layoutX="217.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8_Google_Web_Search_100px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
