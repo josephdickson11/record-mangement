@@ -1,6 +1,6 @@
 # undergrad mini project
 
-##prerequisites
+## prerequisites
 Java
 Javafx
 Javafx scene builder
